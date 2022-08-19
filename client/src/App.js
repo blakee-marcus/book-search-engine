@@ -38,11 +38,11 @@ function App() {
         <ApolloProvider client={client}>
             <Router>
                 <Navbar />
-                <Routes>
+                <Switch>
                     <Route path='/' element={<SearchBooks />} />
                     <Route path='/saved' element={<SavedBooks />} />
-                    <Route path='*' element={<NoMatch/>} />
-                </Routes>
+                    <Route path='*' element={<NoMatch />} />
+                </Switch>
             </Router>
         </ApolloProvider>
     );
