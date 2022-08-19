@@ -18,6 +18,7 @@ type User {
     savedBooks: [Book]
 }
 type Book {
+    _id: ID
     bookId: String
     authors: String
     description: String
